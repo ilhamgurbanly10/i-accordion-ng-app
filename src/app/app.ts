@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import IAccordion, { type IAccordionData, type IAccordionOptions } from './components/IAccordion';
+import { IAccordion, type IAccordionData, type IAccordionOptions } from 'i-accordion-ng';
 
 @Component({
   selector: 'app-root',
