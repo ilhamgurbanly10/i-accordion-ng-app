@@ -1,9 +1,48 @@
 <style>
-  
+
 </style>
 
 <main class="main" style="width: 80%; margin: auto">
+
+  <h2 class="page-title">Angular Accordion package by Ilham Gurbanly</h2>
   <i-accordion [data]="data()" [options]="options()" />
+
+  <div class='doc-container'>
+    <h1 class='doc-title'>Documentation:</h1>
+    <ul class='doc-list'>
+      <li><strong>data: (Required)</strong> - array of objects.</li>
+      <li class="sub-li"><strong>title: string (Required)</strong> - title of accordion item</li>
+      <li class="sub-li"><strong>description: string (Optional)</strong> - content of accordion item</li>
+      <li class="sub-li"><strong>key: string | number (Required)</strong> - unique key of accordion item</li>
+      <li class="sub-li"><strong>disabled: boolean (Optional)</strong> - whether accordion item is disabled</li>
+      <li class="sub-li"><strong>activeInitially: boolean (Optional)</strong> - whether accordion item is active
+        initially</li>
+      <li><strong>options: (Optional)</strong> - options object.</li>
+      <li class="sub-li"><strong>showMultiple: boolean (Optional)</strong> - whether multiple items can be shown
+        at the same time, default value is true</li>
+      <li class="sub-li"><strong>titleVariant: html | text (Optional)</strong> - whether to render title as HTML or
+        text, default value is html</li>
+      <li class="sub-li"><strong>descriptionVariant: html | text (Optional)</strong> - whether to render description as
+        HTML or text, default value is html</li>
+      <li class="sub-li"><strong>headIsClickable: boolean (Optional)</strong> - whether the head itself is clickable or
+        only the plus/minus button, default value is true</li>
+      <li class="sub-li">
+        <strong>headColors: colors object (Optional)</strong> - defines the head colors for active, deactive, and
+        disabled states
+
+      </li>
+      <li class="sub-sub-li"><strong>bg: string (Optional)</strong> - background color</li>
+      <li class="sub-sub-li"><strong>text: string (Optional)</strong> - text color</li>
+       <li class="sub-li">
+        <strong>descriptionColors: colors object (Optional)</strong> - defines the head colors for active and
+        disabled states
+      </li>
+      <li class="sub-sub-li"><strong>bg: string (Optional)</strong> - background color</li>
+      <li class="sub-sub-li"><strong>text: string (Optional)</strong> - text color</li>
+
+    </ul>
+  </div>
+
 </main>
 
 <router-outlet />

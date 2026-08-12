@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation, OnInit, inject } from "@angular/core";
+import { Component, Input, ViewEncapsulation, OnInit, inject, ChangeDetectionStrategy } from "@angular/core";
 import { IAccordionProps, IAccordionOptions } from "./types";
 import { NgClass, NgStyle } from '@angular/common';
 import { MainService } from "./main.service";
@@ -10,6 +10,7 @@ import { MainService } from "./main.service";
     templateUrl: './template.html', 
     styleUrl: './styles.css', 
     encapsulation: ViewEncapsulation.Emulated,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export default class IAccordion implements OnInit {

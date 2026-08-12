@@ -2,6 +2,37 @@ main {
     font-family: Verdana;
 }
 
-:root {
-  interpolate-size: allow-keywords;
+.page-title {
+  text-align: center;
+  margin: 50px auto;
+  color: rgb(77, 77, 224);
 }
+
+.doc-container {
+    width: 100%;
+    margin: 40px auto;
+}
+
+.doc-title {
+    font-size: 25px;
+}
+
+.doc-list {
+    font-size: 14px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+    & li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    & .sub-li {
+      padding-left: 20px;
+    }
+
+    & .sub-sub-li {
+      padding-left: 40px;
+    }
+}
+

@@ -1,11 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import IAccordion, { type IAccordionData, type IAccordionOptions } from './components/IAccordion';
-import { Description } from './components/Description';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, IAccordion, Description],
+  imports: [RouterOutlet, IAccordion],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -29,7 +28,7 @@ export class App {
       key: "3"
     }, 
     {
-      title: "Lorem ipsum disabled?", 
+      title: "Lorem ipsum disabled", 
       description:"",
       key: "4", 
       disabled: true
@@ -46,19 +45,30 @@ export class App {
     headIsClickable: true,
     titleVariant: "html",
     descriptionVariant: "html",
-    // headColors: {
-    //   active: {
-    //     bg: 'red'
-    //   }, 
-    //   deactive: {
-    //     bg: 'green'
-    //   }
-    // }, 
-    //  descriptionColors: {
-    //   active: {
-    //     bg: 'orange'
-    //   }
-    // }
+    headColors: {
+        active: {
+            bg: '#1e40af', 
+            text: '#ffffff'
+        }, 
+        deactive: {
+            bg: '#2563eb', 
+            text: '#ffffff'
+        }, 
+        disabled: {
+            bg: 'gray', 
+            text: '#ffffff'
+        }, 
+    }, 
+    descriptionColors: {
+        active: {
+            bg: '#eff6ff', 
+            text: '#1e3a8a'
+        },
+        disabled: {
+            bg: '#9c9c9c', 
+            text: '#ffffff'
+        }, 
+    }
   })
 
 }

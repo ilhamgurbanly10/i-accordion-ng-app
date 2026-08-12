@@ -2,8 +2,6 @@
     margin: 0;
 }
 
-
-
 :host {
 
     box-sizing: border-box;
@@ -66,8 +64,5 @@
         }
 
     }
-
-
-
 
 }
