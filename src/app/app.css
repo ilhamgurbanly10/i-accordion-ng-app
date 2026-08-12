@@ -10,7 +10,7 @@ main {
 
 .doc-container {
     width: 100%;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .doc-title {
@@ -34,5 +34,10 @@ main {
     & .sub-sub-li {
       padding-left: 40px;
     }
+}
+
+.link {
+    display: inline-block;
+    margin-top: 30px;
 }
 
