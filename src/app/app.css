@@ -1,0 +1,7 @@
+main {
+    font-family: Verdana;
+}
+
+:root {
+  interpolate-size: allow-keywords;
+}

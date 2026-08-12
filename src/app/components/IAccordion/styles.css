@@ -1,0 +1,73 @@
+::ng-deep body {
+    margin: 0;
+}
+
+
+
+:host {
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    & * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent !important;
+        outline: 0;
+    }
+
+    & .i-accordion-item {
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        & .i-accordion-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+
+
+            & .i-accordion-title {
+                margin: 0;
+                font-size: 18px;
+                max-width: 85%;
+            }
+
+            & .i-accordion-toggler {
+                padding: 0;
+                color: white;
+                border: 0;
+                background: none;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.disabled {
+                    opacity: .5;
+                    cursor: not-allowed;
+                }
+            }
+
+        }
+
+        & .i-accordion-desc {
+            padding: 15px;
+            color: white;
+            display: none;
+
+            &.show {
+                display: block;
+            }
+
+        }
+
+    }
+
+
+
+
+}
