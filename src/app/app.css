@@ -4,8 +4,8 @@ main {
 
 .page-title {
   text-align: center;
-  margin: 50px auto;
-  color: rgb(77, 77, 224);
+  margin: 40px auto 10px;
+  color: #DD0031;
 }
 
 .doc-container {
@@ -15,6 +15,7 @@ main {
 
 .doc-title {
     font-size: 25px;
+    color: #DD0031;
 }
 
 .doc-list {
@@ -39,5 +40,24 @@ main {
 .link {
     display: inline-block;
     margin-top: 30px;
+    background-color: #DD0031;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    transition: all .3s;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.02);
+        background-color: #b10228;
+    }
+
+}
+
+.page-desc {
+    font-size: 14px;
+    color: #DD0031;
 }
 

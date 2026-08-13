@@ -9,6 +9,7 @@ import { IAccordion, type IAccordionData, type IAccordionOptions } from 'i-accor
   styleUrl: './app.css'
 })
 export class App {
+
   data = signal<IAccordionData>([
     { 
       title: "<i>What is Lorem Ipsum? </i>", 
@@ -47,11 +48,11 @@ export class App {
     descriptionVariant: "html",
     headColors: {
         active: {
-            bg: '#1e40af', 
+            bg: '#DD0031', 
             text: '#ffffff'
         }, 
         deactive: {
-            bg: '#2563eb', 
+            bg: '#e3365c', 
             text: '#ffffff'
         }, 
         disabled: {
@@ -62,10 +63,10 @@ export class App {
     descriptionColors: {
         active: {
             bg: '#eff6ff', 
-            text: '#1e3a8a'
+            text: '#1A1A1A'
         },
         disabled: {
-            bg: '#9c9c9c', 
+            bg: '#F5F5F5', 
             text: '#ffffff'
         }, 
     }
